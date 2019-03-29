@@ -62,6 +62,6 @@ var sp = new SLIDEPAGE({
 sp.go(1).then(data => {
     console.log("the animation has been completed");
     console.log("the current page:", data.current);
-    console.log("the preious page:", data.previous);
+    console.log("the previous page:", data.previous);
 });
 ```
