@@ -26,6 +26,10 @@ var sp = new SLIDEPAGE({
 });
 ```
 
+## Codepen Example
+
+https://codepen.io/bonarja/pen/ywmjLX
+
 ## Options
 
 -   `el`: containt, allows name or DOM element
