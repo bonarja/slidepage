@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>B O N Λ R J Λ</title>
+    </head>
+    <body>
+        <style>
+            *,
+            *:before,
+            *:after {
+                -webkit-box-sizing: inherit;
+                box-sizing: inherit;
+                font-family: sans-serif;
+            }
+            html {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .app {
+                color: white;
+                width: 400px;
+                height: 400px;
+            }
+            .sp_page {
+                padding: 30px;
+            }
+        </style>
+        <a href="http://bonarja.com" style="text-decoration:none;color:#434674">
+            <h1>B O N Λ R J Λ</h1>
+        </a>
+        <button onclick="sp.prev()">PREV</button>
+        <button onclick="sp.next()">NEXT</button>
+        <br /><br />
+        <div class="app">
+            <div class="sp_page" style="background:darkslateblue">page 1</div>
+            <div class="sp_page" style="background:#4CAF50">page 2</div>
+            <div class="sp_page" style="background:#03A9F4">page 3</div>
+        </div>
+
+        <script src="./slidepage.min.js"></script>
+        <script>
+            var sp = new SLIDEPAGE({
+                el: ".app",
+                repeat: true,
+                realNumber: true,
+                direction: "x"
+            });
+        </script>
+    </body>
+</html>
